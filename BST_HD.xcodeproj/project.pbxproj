@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A734EB9C1CFE59300034755E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A734EB9B1CFE59300034755E /* main.cpp */; };
+		A734EBA41CFE594A0034755E /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A734EBA21CFE594A0034755E /* BinaryTree.cpp */; };
+		A734EBA71CFE59560034755E /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A734EBA51CFE59560034755E /* Node.cpp */; };
+		A7ED9C8F1D1991D100314AE1 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7ED9C8D1D1991D100314AE1 /* Controller.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,17 @@
 /* Begin PBXFileReference section */
 		A734EB981CFE59300034755E /* BST_HD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BST_HD; sourceTree = BUILT_PRODUCTS_DIR; };
 		A734EB9B1CFE59300034755E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A734EBA21CFE594A0034755E /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		A734EBA31CFE594A0034755E /* BinaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
+		A734EBA51CFE59560034755E /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		A734EBA61CFE59560034755E /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		A7BFDEC81D1AD94300D5ECC4 /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
+		A7BFDEC91D1AD9C100D5ECC4 /* testCombo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testCombo; sourceTree = "<group>"; };
+		A7ED9C8D1D1991D100314AE1 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		A7ED9C8E1D1991D100314AE1 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		A7ED9C901D19944500314AE1 /* ints.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ints.txt; sourceTree = "<group>"; };
+		A7ED9C911D199E9600314AE1 /* test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		A7FD82491D1D3E2000D8B8CA /* ConsoleUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConsoleUI.h; path = ../ConsoleUI.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +71,18 @@
 		A734EB9A1CFE59300034755E /* BST_HD */ = {
 			isa = PBXGroup;
 			children = (
+				A7FD82491D1D3E2000D8B8CA /* ConsoleUI.h */,
 				A734EB9B1CFE59300034755E /* main.cpp */,
+				A7ED9C911D199E9600314AE1 /* test */,
+				A734EBA21CFE594A0034755E /* BinaryTree.cpp */,
+				A734EBA31CFE594A0034755E /* BinaryTree.hpp */,
+				A734EBA51CFE59560034755E /* Node.cpp */,
+				A734EBA61CFE59560034755E /* Node.hpp */,
+				A7ED9C8D1D1991D100314AE1 /* Controller.cpp */,
+				A7ED9C901D19944500314AE1 /* ints.txt */,
+				A7ED9C8E1D1991D100314AE1 /* Controller.hpp */,
+				A7BFDEC81D1AD94300D5ECC4 /* tests.h */,
+				A7BFDEC91D1AD9C100D5ECC4 /* testCombo */,
 			);
 			path = BST_HD;
 			sourceTree = "<group>";
@@ -88,7 +113,7 @@
 		A734EB901CFE592F0034755E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Andu;
 				TargetAttributes = {
 					A734EB971CFE59300034755E = {
@@ -118,7 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A734EBA71CFE59560034755E /* Node.cpp in Sources */,
+				A734EBA41CFE594A0034755E /* BinaryTree.cpp in Sources */,
 				A734EB9C1CFE59300034755E /* main.cpp in Sources */,
+				A7ED9C8F1D1991D100314AE1 /* Controller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +167,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -183,8 +213,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -239,6 +271,7 @@
 				A734EBA11CFE59300034755E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
